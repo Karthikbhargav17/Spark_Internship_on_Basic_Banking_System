@@ -1,0 +1,16 @@
+create table users(id int(3) primary key auto_increment,name text,email varchar(30),balance int(8),img_dir varchar(255));
+
+
+ insert into users(name,email,balance)values
+ ('Karthik','karthikbhargav1718@gmail.com','3000.00'),
+ ('Harsha','harshaksrinivas@gmail.com','2000.00'),
+ ('virat','virat18@gmail.com','10000.00'),
+ ('ab devilliers','abd17@gmail.com','3500.00'),
+ ('Maxwell','maxi45@gmail.com','9000.00'),
+ ('Sundar','washi100@gmail.com','4500.00'),
+ ('Dev','devdutt21@gmail.com','2200.00'),
+ ('Jamieson','james777@gmail.com','1275.00'),
+ ('Dany','DanChirs@gmail.com','12000.00'),
+ ('Finn Allen','allenaire@gmail.com','3200.00');
+
+create table transaction(sno int(3) primary key auto_increment,sender text,receiver text,balance int(8),datetime datetime  DEFAULT current_timestamp());
